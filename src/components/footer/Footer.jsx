@@ -1,5 +1,7 @@
 import React from 'react';
 import meme from '../../assets/explain.jpeg';
+import HeaderSocials from './HeaderSocials';
+import CTA from './CTA';
 import './footer.css';
 
 const Intro = () => {
@@ -14,9 +16,10 @@ const Intro = () => {
           <p>
             Want to know more indepth about my projects and experience?
           </p>
-          <a href="https://www.linkedin.com/in/saikiran-siriki-296a22121/" className="btn btn-primary">Let's Connect</a>
+          <CTA />
         </div>
       </div>
+      <HeaderSocials />
     </section>
   )
 }
