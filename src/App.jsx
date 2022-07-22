@@ -2,7 +2,7 @@ import React from 'react';
 import Skills from './components/skills/Skills';
 import Footer from './components/footer/Footer';
 import Intro from './components/intro/Intro';
-import Experience from './components/experience/experience';
+import Experience from './components/experience/Experience';
 
 
 const App = () => {
