@@ -17,16 +17,20 @@ const Intro = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>5+ years</small>
-            </article>
-            <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
-              <h5>Companies</h5>
-              <small>3 startups</small>
-            </article>
+            <a href="#experience">
+              <article className="about__card">
+                <FaAward className="about__icon" />
+                <h5>Experience</h5>
+                <small>5+ years</small>
+              </article>
+            </a>
+            <a href="#skills">
+              <article className="about__card">
+                <VscFolderLibrary className="about__icon" />
+                <h5>Technologies</h5>
+                <small>10+ Skills</small>
+              </article>
+            </a>
           </div>
           <p>
             Having 5+ years of experience in front end web development, I have a passion for design and development of frontend systems, and there's always something new I learn everyday.

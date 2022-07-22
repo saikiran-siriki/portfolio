@@ -1,16 +1,16 @@
 import React from 'react';
-import Experience from './components/experience/Experience';
+import Skills from './components/skills/Skills';
 import Footer from './components/footer/Footer';
 import Intro from './components/intro/Intro';
-import Portfolio from './components/portfolio/Portfolio';
+import Experience from './components/experience/experience';
 
 
 const App = () => {
   return (
     <>
       <Intro />
+      <Skills />
       <Experience />
-      <Portfolio />
       <Footer />
     </>
   )
