@@ -11,7 +11,7 @@ const Header = () => {
         <h1>Saikiran Siriki</h1>
         <h5 className="text-light">Front-end Engineer</h5>
         <CTA />
-        <a href="#contact" className="scroll__down">Scroll Down</a>
+        <a href="#experience" className="scroll__down">Skills</a>
         <HeaderSocials />
       </div>
     </header>
