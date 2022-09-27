@@ -1,0 +1,11 @@
+import Switch from './switch/Switch'
+import './header.css'
+export default function Header() {
+    return (
+        <>
+            <div className="header">
+                <Switch />
+            </div>
+        </>
+    )
+}
