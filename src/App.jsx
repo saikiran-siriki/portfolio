@@ -1,4 +1,4 @@
-import React, {useState, createContext} from 'react';
+import React, {useState, useEffect, createContext} from 'react';
 import Skills from './components/skills/Skills';
 import Footer from './components/footer/Footer';
 import Intro from './components/intro/Intro';
@@ -6,22 +6,40 @@ import Experience from './components/experience/Experience';
 import Header from './components/header/Header'
 
 export const ThemeContext = createContext(null);
+export const UpdateThemeContext = createContext(null)
 
+const defaultTheme = 'dark'
 
 const App = () => {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState(null)
+
+  useEffect(() => {
+    let theme = localStorage.getItem('theme') || defaultTheme;
+    setTheme(theme);
+}, []);
+
   function toggleTheme() {
-    return theme==='dark'? setTheme('light'): setTheme('dark')
+    if(theme==='dark') {
+      setTheme('light')
+      localStorage.setItem('theme','light')
+    } else {
+      setTheme('dark')
+      localStorage.setItem('theme','dark')
+    }
   }
   return (
-    <ThemeContext.Provider value={toggleTheme}>
+    <>
     <link rel="stylesheet" type="text/css" href={`./css/${theme}.css`} />
-      <Header toggleTheme={toggleTheme}/>
+    <ThemeContext.Provider value={theme==='light' }>
+      <UpdateThemeContext.Provider value={toggleTheme}>
+        <Header/>
+      </UpdateThemeContext.Provider>
+      </ThemeContext.Provider>
       <Intro />
       <Skills />
       <Experience />
       <Footer />
-    </ThemeContext.Provider>
+      </>
   )
 }
 
