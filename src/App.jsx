@@ -11,7 +11,7 @@ export const UpdateThemeContext = createContext(null)
 const defaultTheme = 'dark'
 
 const App = () => {
-  const [theme, setTheme] = useState(null)
+  const [theme, setTheme] = useState(defaultTheme)
 
   useEffect(() => {
     let theme = localStorage.getItem('theme') || defaultTheme;
