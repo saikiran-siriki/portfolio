@@ -1,9 +1,10 @@
 import React, {useState, useEffect, createContext} from 'react';
-import Skills from './components/skills/Skills';
-import Footer from './components/footer/Footer';
-import Intro from './components/intro/Intro';
-import Experience from './components/experience/Experience';
 import Header from './components/header/Header'
+import Intro from './components/intro/Intro';
+import Skills from './components/skills/Skills';
+import Experience from './components/experience/Experience';
+import Projects from './components/projects/Projects'
+import Footer from './components/footer/Footer';
 
 export const ThemeContext = createContext(null);
 export const UpdateThemeContext = createContext(null)
@@ -38,6 +39,7 @@ const App = () => {
       <Intro />
       <Skills />
       <Experience />
+      <Projects />
       <Footer />
       </>
   )

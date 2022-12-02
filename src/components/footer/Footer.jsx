@@ -8,7 +8,7 @@ const Intro = () => {
   return (
     <section className="footer">
       <h5>Get to know more</h5>
-      <h2>About my projects</h2>
+      <h2>About me</h2>
       <div className="container about__container">
             <img src={meme} alt="me" />
           
