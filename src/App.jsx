@@ -5,6 +5,7 @@ import Skills from './components/skills/Skills';
 import Experience from './components/experience/Experience';
 import Projects from './components/projects/Projects'
 import Footer from './components/footer/Footer';
+import AnalyticsWrapper from '../analytics/analytics';
 
 export const ThemeContext = createContext(null);
 export const UpdateThemeContext = createContext(null)
@@ -41,6 +42,7 @@ const App = () => {
       <Experience />
       <Projects />
       <Footer />
+      <AnalyticsWrapper />
       </>
   )
 }
