@@ -1,5 +1,6 @@
 import React from 'react';
 import PortfolioItem from './portfolioitem/PortfolioItem'
+import Intuit from '../../assets/intuit.jpeg'
 import Zeta from '../../assets/zeta.png'
 import Wysh from '../../assets/wysh.jpeg'
 import Ayasta from '../../assets/ayasta.png'
@@ -9,6 +10,12 @@ import './experience.css';
 
 const experience = () => {
   const overallExperience = [
+    {
+      name: 'Intuit',
+      website: 'https://www.intuit.com/',
+      description: `As a part of Quickbook experts team, working on delivering widgets related to task management embedded across various offerings like Quickbooks, Turbotax etc. by leveraging Intuit's inhouse framework AppFabric`,
+      logo: Intuit
+    },
     {
       name: 'Zeta Suite',
       website: 'https://www.zeta.tech/',
