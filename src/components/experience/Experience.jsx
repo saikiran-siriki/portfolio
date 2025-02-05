@@ -13,7 +13,7 @@ const experience = () => {
     {
       name: 'Intuit',
       website: 'https://www.intuit.com/',
-      description: `As a part of Quickbook experts team, working on delivering widgets related to task management embedded across various offerings like Quickbooks, Turbotax etc. by leveraging Intuit's inhouse framework AppFabric`,
+      description: `As a part of QBOA business intelligence team, I'm working on providing powerful reporting capabilities that empower small businesses to make data-driven decisions, optimize their financial performance, and gain valuable insights to drive growth`,
       logo: Intuit
     },
     {

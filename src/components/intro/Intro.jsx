@@ -21,7 +21,7 @@ const Intro = () => {
               <article className="about__card">
                 <FaAward className="about__icon" />
                 <h5>Experience</h5>
-                <small>5+ years</small>
+                <small>7+ years</small>
               </article>
             </a>
             <a href="#skills">
@@ -33,7 +33,7 @@ const Intro = () => {
             </a>
           </div>
           <p>
-            Having 5+ years of experience in front end web development, I have a passion for design and development of frontend systems, and there's always something new I learn everyday.
+            Having 7+ years of experience in front end web development, I have a passion for design and development of frontend systems, and there's always something new I learn everyday.
           </p>
           <p> Through out my career I have worked at multiple startups(from pre-seed stage to unicorns) and have hands on experience with designing and developing robust systems from scratch with minimal guidance.</p>
           <p> I have worked both as a Individual contributor as well as team player. I like to own things I do and drive things I own to completion. </p>
